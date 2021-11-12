@@ -1,4 +1,4 @@
-Cutscene Toolkit for Unity
+# Cutscene Toolkit for Unity
 Version 1.0.0  |  By Carroted
 
 Licensed under MIT License. A copy of the license can be found in this folder.
