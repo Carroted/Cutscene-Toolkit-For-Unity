@@ -1,23 +1,24 @@
 {
-    "name": "ca.carroted.cutscene-toolkit",
-    "version": "1.0.0",
-    "displayName": "Cutscene Toolkit",
-    "description": "Unofficial but useful assets for Unity that are super helpful for cutscenes in 2D and 3D games",
-    "keywords": [
-        "yeoman-generator",
-        "Unity3D",
-        "Unity5",
-        "Unity"
-    ],
-    "unity": "2019.3",
-    "main": "app/index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Carroted/cutscene-toolkit-for-unity.git"
-    },
-    "author": {
-        "name": "Carroted",
-        "url": "https://github.com/Carroted"
-    },
-    "license": "MIT"
+  "name": "ca.carroted.cutscene-toolkit",
+  "version": "1.0.0",
+  "displayName": "Cutscene Toolkit",
+  "description": "Unofficial but useful assets for Unity that are super helpful for cutscenes in 2D and 3D games",
+  "keywords": [
+    "yeoman-generator",
+    "Unity3D",
+    "Unity5",
+    "Unity"
+  ],
+  "unity": "2019.3",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carroted/cutscene-toolkit-for-unity.git"
+  },
+  "author": {
+    "name": "Carroted",
+    "url": "https://github.com/Carroted"
+  },
+  "license": "MIT",
+  "hideInEditor": false
 }
