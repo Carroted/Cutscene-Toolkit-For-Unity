@@ -5,36 +5,41 @@ using UnityEngine.Events;
 using UnityEditor;
 using System.Linq;
 
-public class TaggedObjectSensor : MonoBehaviour
+namespace CutsceneToolkit
 {
-    public UnityEvent onObjectEnter;
-    public UnityEvent onObjectStay;
-    public UnityEvent onObjectExit;
 
-    public string[] tags = new string[] { };
-
-    void OnTriggerEnter2D(Collider2D other)
+    public class TaggedObjectSensor : MonoBehaviour
     {
-        if (tags.Length == 0)
-            return;
+        public UnityEvent onObjectEnter;
+        public UnityEvent onObjectStay;
+        public UnityEvent onObjectExit;
 
-        if (tags.Contains(other.tag))
-            onObjectEnter.Invoke();
-    }
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (tags.Length == 0)
-            return;
+        public string[] tags = new string[] { };
 
-        if (tags.Contains(other.tag))
-            onObjectStay.Invoke();
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (tags.Length == 0)
-            return;
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (tags.Length == 0)
+                return;
 
-        if (tags.Contains(other.tag))
-            onObjectExit.Invoke();
+            if (tags.Contains(other.tag))
+                onObjectEnter.Invoke();
+        }
+        void OnTriggerStay2D(Collider2D other)
+        {
+            if (tags.Length == 0)
+                return;
+
+            if (tags.Contains(other.tag))
+                onObjectStay.Invoke();
+        }
+        void OnTriggerExit2D(Collider2D other)
+        {
+            if (tags.Length == 0)
+                return;
+
+            if (tags.Contains(other.tag))
+                onObjectExit.Invoke();
+        }
     }
+
 }
